@@ -1,0 +1,16 @@
+Tóm tắt:
+- Slice là kiểu dữ liệu gồm nhiều phần tử cùng kiểu dữ liệu như mảng nhưng không cố định chiều dài:
+ + Gồm 3 thành phần: mảng chứa dữ liệu các phần tử, số phần tử (chiều dài slice) và số phần tử tối đa (sức chứa slice).
+ + Các hàm và toán tử xử lý:
+  * make([]<kiểu dữ liệu>, <chiều dài>, <sức chứa>): tạo slice a với chiều dài và mảng.
+  * len(a): chiều dài slice a.
+  * cap(a): sức chứa slice a.
+  * a[i]: truy xuất phần tử i của a.
+  * a[i:j]: slice con của a gồm các phần tử từ i đến j-1. a[:] chính là a.
+  * append(): thêm phần tử vào cuối slice.
+  * copy(): chép phần tử từ slice này sang slice khác.
+- Map là dạng bảng băm với khóa là kiểu so sánh được và giá trị cùng kiểu:
+ + Khai báo: var <tên biến> map[<kiểu dữ liệu khóa>]<kiểu dữ liệu giá trị>. Sau khai báo, biến cần khởi tạo bằng hàm make để có thể tạo phần tử.
+ + a = make(map[int]string): tạo vùng nhớ lưu trữ cho biến kiểu map a.
+ + a[1] truy xuất chuỗi ứng với phần tử có khóa là 1.
+ + delete(a[1]) dùng để xóa phần tử 1 của a.

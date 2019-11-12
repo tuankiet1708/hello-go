@@ -1,0 +1,10 @@
+Tóm tắt:
+- Mảng là dãy liên tiếp các đối tượng cùng kiểu dữ liệu:
+ + Khai báo: var <tên biến> [<số phần tử>]<kiểu dữ liệu phần tử>
+ + Mỗi đối tượng được gọi là phần tử. Hàm len(a) cho chiều dài mảng chính là số phần tử của mảng a và a[i] cho giá trị phần tử i của mảng a.
+ + Mảng không thay đổi chiều dài được.
+ + Mảng chủ yếu dùng để lưu trữ dữ liệu cho kiểu slice.
+- Cấu trúc là tập hợp các đối tượng có kiểu dữ liệu khác nhau:
+ + Mỗi đối tượng gọi là trường của cấu trúc.
+ + Khai báo: type <tên kiểu dữ liệu> struct {<tên trường> <tên kiểu dữ liệu>}
+ + Kiểu dữ liệu 1 trường chính là cấu trúc đó là bất hợp lệ, sử dụng con trỏ của cấu trúc đó thì được.

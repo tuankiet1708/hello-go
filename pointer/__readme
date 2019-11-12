@@ -1,0 +1,9 @@
+Tóm tắt:
+- Con trỏ:
+ + Là biến lưu giữ địa chỉ chứa dữ liệu thay vì chứa dữ liệu. Kích thước vùng nhớ luôn cố định do không phụ thuộc kiểu dữ liệu.
+ + Khai báo: var <tên biến con trỏ> *<kiểu dữ liệu>
+ + Toán tử: *p để lấy giá trị biến con trỏ p trỏ đến và &i để lấy địa chỉ vùng nhớ biến i.
+ + Biến con trỏ có thể so sánh == hoặc !=.
+- Hàm new:
+ + Tạo vùng nhớ của một kiểu dữ liệu trả về địa chỉ vùng nhớ đó.
+ + Sử dụng khi cần tạo biến con trỏ để thao tác không qua trung gian một biến dữ liệu.

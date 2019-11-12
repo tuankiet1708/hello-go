@@ -1,0 +1,7 @@
+Tóm tắt:
+- Kiểu chuỗi chứa một chuỗi byte dữ liệu không thay đổi sau khi đã tạo.
+- Hàm len(s) để lấy chiều dài chuỗi s và s[i] để lấy byte thứ i của s (0<= i <len(s)).
+- Toán tử s[i:j] sẽ tạo ra chuỗi con của s chứa các phần tử từ i đến j -1. s[:j] sẽ ứng với i = 0 và s[i:] ứng với j = len(s). s[:] chính là chuỗi s.
+- Gán nội dung cho chuỗi bằng cặp "" hoặc ``. Chuỗi unicode mặc định mã hóa UTF-8.
+- Dùng fmt.Sprintf và strconv.Itoa để chuyển số thành chuỗi.
+- Dùng strconv.Atoi và strconv.ParseInt để chuyển chuỗi thành số.

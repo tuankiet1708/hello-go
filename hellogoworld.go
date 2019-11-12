@@ -1,7 +1,7 @@
 package main
 
 import (
-	"./pointer"
+	"./slicemap"
 )
 
 func main() {
@@ -14,5 +14,9 @@ func main() {
 	// fmt.Println(studentA)
 	// arraystruct.RunStruct()
 
-	pointer.RunPointer()
+	// pointer.RunPointer()
+
+	// slicemap.RunSlice()
+	// slicemap.RunSliceAdvanced()
+	slicemap.RunMap()
 }
