@@ -1,0 +1,4 @@
+Tóm tắt:
+- Đệ quy:
+ + Khái niệm hàm gọi chính nó hoặc gọi hàm có gọi đến nó.
+ + Đệ quy tốn nhiều bộ nhớ stack khi thực thi và Go cấp tối đa 1 GB cho phần này.
