@@ -1,17 +1,18 @@
 package main
 
 import (
-	"fmt"
-
-	"./arraystruct"
+	"./pointer"
 )
 
 func main() {
-	// string.Run()
 	// intstring.Run()
+
 	// arraystruct.RunArray()
 	// arraystruct.RunStruct()
-	var studentA arraystruct.Student
-	fmt.Println(studentA)
-	arraystruct.RunStruct()
+
+	// var studentA arraystruct.Student
+	// fmt.Println(studentA)
+	// arraystruct.RunStruct()
+
+	pointer.RunPointer()
 }
