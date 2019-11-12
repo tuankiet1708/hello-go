@@ -1,0 +1,6 @@
+Tóm tắt:
+- Câu lệnh if theo cú pháp if <biểu thức luận lý> {} else if <biểu thức luận lý> {} else {}
+- Câu lệnh switch:
+ + Không cần break để kết thúc khối lệnh mỗi case.
+ + Muốn thực hiện xuyên case phải xài fallthrough
+- Vòng lặp for: có 4 dạng tương thích while, do while, for và for range.
