@@ -1,0 +1,9 @@
+Tóm tắt:
+- Hàm là khối lệnh cùng mục đích xử lý một tác vụ nhất định:
+ + Khai báo: func <tên hàm>(<danh sách tham số>) (<danh sách trả về>) {
+        <Khối lệnh>
+    }
+ + Hàm không được phép đặt trùng tên.
+ + Danh sách tham số hay danh sách trả về hay khối lệnh đều có thể không có.
+ + Khi có tham số, cần truyền đủ và Go không có cơ chế giá trị mặc định cho tham số.
+- Ghi chú: là cách bổ sung thêm các thông tin mà không sợ Go biên dịch nó. Có 2 loại: // cho ghi chú dòng và /* */ cho ghi chú nhiều dòng.

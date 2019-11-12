@@ -1,7 +1,7 @@
 package main
 
 import (
-	"./slicemap"
+	"./function"
 )
 
 func main() {
@@ -18,5 +18,7 @@ func main() {
 
 	// slicemap.RunSlice()
 	// slicemap.RunSliceAdvanced()
-	slicemap.RunMap()
+	// slicemap.RunMap()
+
+	function.RunFunc()
 }
