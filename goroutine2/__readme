@@ -1,0 +1,7 @@
+Tóm tắt:
+- Sử dụng từ khóa go trước các lệnh gọi hàm hay phương thức để biến chúng thành goroutine xử lý đồng thời. Các goroutine này sẽ được phân phối vào một hay nhiều bộ xử lý logic.
+- Mỗi bộ xử lý logic gắn với một thread hệ thống.
+- Khi các goroutine cùng xử lý một biến hay tài nguyên, khả năng xung đột sẽ xảy ra. Kiểm tra xung đột bằng cách khai báo thêm tham số -race khi biên dịch chương trình, Go sẽ báo có xung đột khi thực thi.
+- Go cung cấp 2 cơ chế xử lý xung đột:
+ + Atomic xử lý xung đột cho kiểu số nguyên và con trỏ thông qua các hàm AddT, LoadT và StoreT.
+ + Mutex xử lý xung đột bằng các hàm Lock() và Unlock(). Gọi cặp hàm này giữa nhóm hàm cần thực hiện đồng bộ.
