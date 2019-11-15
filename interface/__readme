@@ -1,0 +1,7 @@
+Tóm tắt:
+- Interface là kiểu dữ liệu trừu tượng, chỉ khai báo các phương thức mô tả hành động, không khai báo dữ liệu lưu trữ. Khi các kiểu dữ liệu khác có khai báo đầy đủ các phương thức mà interface đã khai thì các kiểu dữ liệu này đáp ứng yêu cầu và các biến (thực thể) của chúng đều có thể được lưu trữ và sử dụng bởi các biến kiểu interface.
+- Interface có thể được khai báo bằng các phương thức hoặc nhúng các interface khác hoặc kết hợp vừa phương thức vừa nhúng đều được. Tên interface thường kết thúc bằng "er".
+- Giá trị một biến interface tại một thời điểm là cặp kiểu dữ liệu cụ thể và giá trị tại thời điểm đó của thực thể kiểu dữ liệu cụ thể. Khi mới khởi tạo biến interface có giá trị (nil,nil). Interface là kiểu so sánh được với so sánh bằng và khác nên có thể làm khóa cho kiểu map.
+- Interface có trường hợp đặc biệt là interface rỗng với khai báo interface{}. Lúc này mọi kiểu dữ liệu đều đáp ứng nó và có thể dùng nó đại diện cho các kiểu dữ liệu ở mọi nơi.
+- Dùng type assertion để ép interface về kiểu dữ liệu cụ thể: <biến interface>.(<kiểu dữ liệu cụ thể>)
+- Chỉ nên dùng interface phục vụ cho từ 2 kiểu dữ liệu trở lên nhưng cũng không quá nhiều để tiện quản lý và tránh làm ứng dụng thêm phức tạp.
