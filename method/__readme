@@ -1,0 +1,6 @@
+Tóm tắt:
+- Go cho phép tạo phương thức của bất kỳ kiểu dữ liệu nào trong cùng package (trừ kiểu con trỏ). Cách khai báo phương thức là thêm tham số là vật nhận trước tên hàm: func (<vật nhận>)<tên hàm>(<tham số>) (<trả về>).
+- Tên phương thức trùng tên trường sẽ bị loại bỏ và đặt tên phương thức giống nhau của cùng kiểu dữ liệu sẽ bị báo lỗi.
+- Khi vật nhận là con trỏ, có thể truy xuất phương thức trực tiếp mà không cần chuyển nếu biến gọi không phải con trỏ. Ngược lại vẫn đúng.
+- Phương thức có thể được truyền là tham số và gán cho một biến để sử dụng sau này y như hàm.
+- Để sử dụng trực tiếp thông tin của một cấu trúc khác, cấu trúc cần khai báo dưới dạng trường vô danh cho cấu trúc cần sử dụng.
