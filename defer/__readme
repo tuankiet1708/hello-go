@@ -1,0 +1,5 @@
+Tóm tắt:
+- Lệnh trì hoãn:
+ + Là lệnh khai báo với từ khóa defer giúp lệnh không thực thi ngay mà thực thi vào cuối hàm, sau cả lệnh return.
+ + Defer thường dùng để báo đóng/hủy tài nguyên đã sử dụng.
+ + Không nên dùng defer đóng tài nguyên trong vòng for vì sẽ tạo ra hàng loạt lệnh thực thi cuối hàm dẫn đến ngốn tài nguyên.

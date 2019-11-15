@@ -1,0 +1,9 @@
+Tóm tắt:
+- Hàm vô danh:
+ + Hàm không đặt tên, khai báo các phần khác tương tự như hàm bình thường.
+ + Hàm vô danh khai báo trong hàm khác và nó có thể sử dụng biến cục bộ của hàm chứa nó mà không cần truyền tham số.
+ + Muốn dùng đệ quy với hàm vô danh thì biến gán cho hàm vô danh cần khai báo trước khi khai báo hàm vô danh.
+ + Hàm vô danh trong vòng for nhận giá trị biến cục bộ trong vòng for còn các biến bên ngoài và trên vòng for hàm vô danh nhận tham chiếu.
+- Hàm bất định:
+ + Là hàm có tham số không cố định.
+ + Dùng dấu ... sau biến tham số để xác định tham số bất định
