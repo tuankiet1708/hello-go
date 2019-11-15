@@ -1,0 +1,5 @@
+Tóm tắt:
+- Go đề xuất sử dụng giá trị trả về cuối cùng của hàm để báo giá trị lỗi, thường là biến ok với giá trị true nếu không có lỗi.
+- Dùng biến kiểu error nếu muốn mô tả chi tiết lỗi.
+- Có 5 cách xử lý lỗi phổ biến: chuyển lỗi, thử lại, dừng chủ động, ghi nhận lỗi và bỏ qua lỗi.
+- Dùng panic và recover để xử lý cho tình huống dừng chủ động cần xử lý defer.
