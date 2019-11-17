@@ -1,0 +1,7 @@
+Tóm tắt:
+- Kênh là cơ chế trao đổi dữ liệu giữa các goroutine. Mỗi kênh chỉ trao đổi 1 loại dữ liệu.
+- Biến kênh là kiểu tham chiếu, được tạo bằng lệnh make. Hai hành động chính của kênh là gửi và nhận. Một hành động khác là đóng kênh.
+- Có 2 loại kênh: kênh đơn (unbuffered channel) và kênh đa (buffered channel).
+- Kênh đơn chỉ chứa tối đa một giá trị dữ liệu trong kênh. Kênh đơn đòi hỏi đồng bộ trong gửi nhận: khi gửi thì goroutine thực hiện gửi bị khóa cho đến khi việc nhận kết thúc và goroutine thực hiện nhận bị khóa cho đến khi nhận xong dữ liệu từ kênh.
+- Kênh đa có thể chứa nhiều hơn một giá trị dữ liệu và chứa tối đa số giá trị được khai báo. Goroutine gửi chỉ bị khóa khi khả năng chứa của kênh bị đầy và goroutine nhận chỉ bị khóa khi kênh trống dữ liệu.
+- Sử dụng kênh đơn hay đa đều cẩn thận để tránh bị khóa.
