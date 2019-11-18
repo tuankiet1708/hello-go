@@ -7,5 +7,5 @@ import (
 
 func main() {
 	fmt.Println("Hello, playground")
-	fmt.Println(palindrome.IsPalindrome("heh"))
+	fmt.Println(palindrome.IsPalindrome("été"))
 }
