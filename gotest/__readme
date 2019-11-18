@@ -1,0 +1,7 @@
+Tóm tắt:
+Kiểm thử là hoạt động thường xuyên để đảm bảo ứng dụng chạy đúng. Go cung cấp kiểm thử ở mức đơn vị:
+- Các hàm khai báo trong file _test.go và chỉ được biên dịch với lệnh go test.
+- Có 3 nhóm hàm là kiểm thử, kiểm chuẩn và ví dụ.
+- Hàm kiểm thử sẽ có tên bắt đầu bằng Test với mục đích sẽ kiểm tra logic hàm cần test có đúng như mong muốn hay không. go test khi gọi các hàm kiểm thử  này sẽ xuất kết quả PASS (đúng logic) hoặc FAIL (sai logic).
+- Hàm kiểm chuẩn sẽ có tên bắt đầu bằng Benchmark với mục đích đo hiệu năng hoạt động của hàm. go test sẽ trả kết quả là thời gian thực hiện trung bình của hàm cần kiểm.
+- Hàm ví dụ sẽ có tên bắt đầu bằng Example với mục đích tạo ra ví dụ mẫu khi tạo tài liệu cho hàm chức năng.
