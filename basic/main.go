@@ -2,8 +2,7 @@ package main
 
 import (
 	"fmt"
-
-	"./ifswitchloop"
+	ifswitchloop "goprogramming/hello/basic/ifswitchloop" // change to your suitable path
 )
 
 func main() {

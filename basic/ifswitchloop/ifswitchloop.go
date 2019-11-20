@@ -14,17 +14,17 @@ func RunIfSwitchLoop() {
 	}
 }
 
-// for { // Như vòng lặp do while 
-//     <Khối lệnh> 
-// } 
-// for <Biểu thức luận lý> { // Như vòng lặp while 
-//     <Khối lệnh> 
-// } 
-// for <Mô tả trước>; <Biểu thức luận lý>; <Mô tả sau> { 
-//     <Khối lệnh> 
-// } 
-// for <Chỉ số>, <Giá trị> := range <Biến kiểu dữ liệu có phần tử> { 
-//     <Khối lệnh> 
+// for { // Như vòng lặp do while
+//     <Khối lệnh>
+// }
+// for <Biểu thức luận lý> { // Như vòng lặp while
+//     <Khối lệnh>
+// }
+// for <Mô tả trước>; <Biểu thức luận lý>; <Mô tả sau> {
+//     <Khối lệnh>
+// }
+// for <Chỉ số>, <Giá trị> := range <Biến kiểu dữ liệu có phần tử> {
+//     <Khối lệnh>
 // }
 
 func RunFact1(n uint) uint {
