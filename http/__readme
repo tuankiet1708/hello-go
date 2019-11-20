@@ -1,0 +1,6 @@
+Tóm tắt:
+- Package net/http của Go cung cấp hàm http.ListenAndServe(addr string, handler Handler) để tạo web server.
+- Bộ phận tiếp nhập yêu cầu và định hướng xử lý yêu cầu: ServeMux.
+- Bộ phận trực tiếp xử lý yêu cầu và gửi phản hồi: Handler.
+- Sử dụng DefaultServeMux nếu không có nhu cầu đặc biệt.
+- Để sử dụng hàm làm handler, hàm cần có dạng func(ResponseWriter, *Request) và sử dụng http.HandleFunc để đăng ký.
