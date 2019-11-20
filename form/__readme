@@ -1,0 +1,7 @@
+Tóm tắt:
+- Biểu mẫu html: Server cần gọi phương thức ParseForm để xử lý thông tin từ biểu mẫu do client gửi lên. Dùng phương thức Form hoặc PostForm của http.Request để lấy thông tin biểu mẫu, được lưu dưới dạng map.
+- Dữ liệu nhận từ client cần xác thực dữ liệu: dữ liệu bắt buộc, loại dữ liệu, dữ liệu tồn tại và dữ liệu nguy hại.
+- Tải file lên server:
+ + Client cần khai báo đúng loại biểu mẫu.
+ + Server cần gọi ParseMultipartForm để xử lý tải file và FormFile để lấy thông tin file tải lên.
+ + Server sử dụng http.DetechContentType để xác định loại file tải lại trước khi lưu.
