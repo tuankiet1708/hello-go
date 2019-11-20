@@ -1,0 +1,5 @@
+Tóm tắt:
+- XML là một định dạng dùng trong trao đổi dữ liệu trên mạng, xây dựng cấu trúc thông tin qua các thẻ (tag). XML dễ dàng chuyển đổi qua kiểu struct trong Go với 2 hàm Marshall và Unmarshall.
+- JSON sử dụng cấu trúc khóa:giá trị để tạo cấu trúc dữ liệu. So với XML, JSON cho cấu trúc nhỏ gọn hơn, khả năng truy xuất cũng nhanh hơn. Chuyển đổi giữa JSON và struct cũng dùng hàm Marshall và Unmarshall thuộc package encoding/json.
+- Trường hợp không thể chuyển về struct do khó xác định cấu trúc, có thể truy xuất dữ liệu bằng cách phân giải JSON về map[string]interface{} hoặc []interface{}. Đơn giản hơn có thể dùng simplejson.
+- Sử dụng text/template và html/template để có thể nhanh chóng tạo ra các nội dung trang web phản hồi về cho client.
