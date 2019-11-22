@@ -1,0 +1,6 @@
+Tóm tắt:
+- Vấn đề cơ bản để tránh các lỗi bảo mật là lọc dữ liệu, đặc biệt dữ liệu người dùng trước khi lưu xuống cơ sở dữ liệu hoặc gửi xuống client.
+- Lọc dữ liệu có thể dùng biểu thức chính quy cho dữ liệu có mẫu sẵn như ngày giờ, email hoặc kiểm tra tồn tại trong danh sách dữ liệu và sử dụng các hàm Escape để loại bỏ các dữ liệu có thể gây hại.
+- XSS là lổ hổng cho phép hacker chèn mã độc vào trang web rồi nó được server lưu xuống và đưa trở lại client sau đó và được trình duyệt thực thi vì tưởng là đoạn mã hợp lệ. Cách bảo vệ thông thường là lọc dữ liệu trước khi lưu và khi đưa xuống client.
+- SQL injection là kiểu tấn công bằng cách tiêm mã độc vào câu truy vấn SQL. Mục đích chính giúp hacker vượt qua bước xác thực để tiếp cận thông tin dịch vụ. Ngoài ra với các hệ quản trị hỗ trợ (MS SQL server), hacker có thể lợi dụng lỗ hổng này để thực thi các lệnh hệ thống. Cách bảo vệ thông thường là lọc dữ liệu và sử dụng kiểu truyền giá trị tham số vào câu SQL do Go hỗ trợ.
+- CSRF là kiểu tấn công lừa người dùng thực thi một tác vụ không mong muốn trên dịch vụ người dùng đã xác thực từ trước. Cách bảo vệ tốt nhất là loại bỏ các phương thức GET ra khỏi các yêu cầu có thể thay đổi dữ liệu, trạng thái trên server. Xác nhận trước khi thực hiện yêu cầu với captcha hay dùng token bí mật là cách để loại bỏ CSRF. 
