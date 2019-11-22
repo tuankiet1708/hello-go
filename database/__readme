@@ -1,0 +1,6 @@
+Tóm tắt:
+- Go không cung cấp các trình điều khiển mà cung cấp các package để tạo giao tiếp chung cho các trình điều khiển cơ sở dữ liệu quan hệ:
+ + Khai báo package trình điều khiển với dấu _ để xác nhận đăng ký trình điều khiển, không sử dụng trực tiếp.
+ + Mở kết nối với sql.Open. Đóng kết nối với sql.DB.Close
+ + Thao tác dữ liệu với DB.Exec, DB.Query, DB.QueryRow, DB.Prepare, v.v...
+- Với NoSQL, mỗi loại sẽ có cách kết nối và thao tác riêng.
