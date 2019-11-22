@@ -5,3 +5,9 @@ Tóm tắt:
 - Server sinh token rồi trả về client lưu chứ server không lưu. Khi nhận lại token, server tự giải mã nó để xác định thông tin người dùng tương ứng.
 - JWT là loại token được tạo thành dựa trên 3 thành phần là các chuỗi JSON đã mã hóa. JWT được dùng phổ biến làm mã xác thực trong phương pháp xác thực với token.
 - JWT đảm bảo sự toàn vẹn dữ liệu nên ngoài việc được dùng cho xác thực thì còn được dùng để trao đổi dữ liệu. 
+
+- SSO hay xác thực một lần là cơ chế yêu cầu đăng nhập một lần để có thể sử dụng nhiều dịch vụ khác nhau. Hai cơ chế hỗ trợ SSO nổi tiếng là OpenID và SAML.
+- OAuth là cơ chế cấp quyền tức là nó không có quyền tiếp cận mọi thông tin của người dùng như cơ chế xác thực mà chỉ tiếp cận được số lượng thông tin giới hạn được khai báo trước đó và phải xin phép người dùng để tiếp cận các thông tin này.
+- Phiên bản hiện tại của OAuth là 2.0, một bước đột phá so với 1.0.
+- OAuth có 4 hình thức cấp quyền: mã ủy quyền, ủy quyền ngầm, thông tin đăng nhập của người dùng và thông tin đăng nhập của client. Ủy quyền ngầm là cách phổ biến nhất.
+- OAuth trên Go có thể dùng package goth để phát triển. Nó hỗ trợ hơn 20 dịch vụ phổ biến khác nhau.
