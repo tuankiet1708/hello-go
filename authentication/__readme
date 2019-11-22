@@ -1,0 +1,7 @@
+Tóm tắt:
+- Tài khoản người dùng chứa thông tin người dùng, đặc biệt là thông tin xác thực. Dịch vụ web sử dụng cặp ID và mật khẩu là thông tin xác thực.
+- Sau khi đăng nhập thành công, client không gửi thông tin đăng nhập lên server nữa mà gửi mã xác thực theo phương pháp session-cookie hoặc token.
+- Cookie lưu session ID do server gửi về sau khi đăng nhập thành công vào trình duyệt và gửi lại cho server ở trường Cookie khi cần xác thực. Session được server tạo ra và lưu trữ sau khi client đăng nhập thành công. Server so sánh session ID client gửi và cái lưu trong session để có cơ sở xác thực.
+- Server sinh token rồi trả về client lưu chứ server không lưu. Khi nhận lại token, server tự giải mã nó để xác định thông tin người dùng tương ứng.
+- JWT là loại token được tạo thành dựa trên 3 thành phần là các chuỗi JSON đã mã hóa. JWT được dùng phổ biến làm mã xác thực trong phương pháp xác thực với token.
+- JWT đảm bảo sự toàn vẹn dữ liệu nên ngoài việc được dùng cho xác thực thì còn được dùng để trao đổi dữ liệu. 
