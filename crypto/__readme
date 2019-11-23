@@ -1,0 +1,6 @@
+Tóm tắt:
+- Mã hóa gồm mã hóa một chiều (hàm băm) và mã hóa hai chiều. Mã hóa 2 chiều lại chía ra gồm mã hóa đối cứng và mã hóa bất đối xứng.
+- Mật khẩu thường được mã hóa bởi hàm băm do không có nhu cầu giải mã. Để tăng dộ bảo mật tránh việc bị so sánh băm để tìm ra mật mã gốc có thể dùng phương pháp salting, thêm dữ liệu vào trước khi mã hóa. Go cung cấp package crypto/md5, crypto/sha1, crypto/sha256, crypto/sha512 để thực hiện băm.
+- Base64 là loại mã hóa đối xứng chuyên dùng để chuyển dữ liệu nhị phân ra chuỗi ký tự đọc được. Go cung cấp package encoding/base64 để mã hóa base64 cho cả dạng chuẩn và phù hợp URL.
+- Go cung cấp package crypto/aes để mã hóa và giải mã khối AES. AES chỉ mã hóa từng khối có kích thước xác định trước. Để mã hóa nguyên chuỗi hoặc file phải dùng tiếp mã hóa CFB, OFB hay CTR.
+- Mã hóa bất đối xứng RSA được Go hỗ trợ qua crypto/rsa.
