@@ -1,0 +1,9 @@
+Tóm tắt:
+- Dịch vụ web phục vụ cho thiết bị còn ứng dụng web phục vụ cho con người nên dịch vụ web chỉ cần cung cấp API thay vì cung cấp giao diện. Các phương thức tạo kết nối trao đổi dữ liệu cho dịch vụ web ở Go: socket, websocket, REST và RPC.
+- Socket: kết nối mạng cấp thấp gồm 2 loại TCP hướng kết nối và UDP không kết nối.
+- Websocket: là một tính năng của HTML5, cho phép tạo socket trên trình duyệt để client và server có thể trao đổi dữ liệu qua lại thay vì theo mô hình client hỏi server trả lời như trước kia.
+
+- REST xem mọi dữ liệu là tài nguyên và quy định chuẩn hóa tương tác: tạo dùng POST, xem dùng GET, cập nhật dùng PUT/PATCH, xóa dùng DELETE.
+- RESTful API là hệ thống API theo chuẩn REST.
+- RPC cung cấp phương thức gọi hàm xử lý từ xa.
+- Go hỗ trợ TCP RPC, HTTP RPC và JSON RPC. Dữ liệu trao đổi được mã hóa bởi Gob nên RPC ở Go đòi hỏi cả server và client cùng xây dựng từ Go.
