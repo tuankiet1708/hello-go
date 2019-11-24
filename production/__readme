@@ -1,0 +1,5 @@
+Tóm tắt:
+- Mục đích của ghi log là để lưu lại các thông tin trong quá trình sử dụng để kiểm tra, đánh giá, chỉnh sửa các lỗi nếu có. Go cung cấp package log để thực hiện việc này nhưng khá đơn giản. Cần nhiều tính năng hơn có thể sử dụng: go, logrus, hay glog, v.v...
+- Dù việc test có kỹ lưỡng đến đâu thì lỗi vẫn có thể xảy ra trong quá trình sử dụng. Cách xử lý khi gặp lỗi là quan trọng để đảm bảo dịch vụ hoạt động không gián đoạn và có đủ thông tin để sửa lỗi sau đó.
+- Do Go thiếu chức năng liên quan đến việc hỗ trợ dịch vụ web hoạt động như daemon nên các tính năng tắt dịch vụ hay khởi động lại dịch vụ cần được chú ý cài đặt thêm với các phương thức do Go hỗ trợ hoặc sử dụng của bên khác như graceful hay endless.
+- Dữ liệu dịch vụ là một bộ phận rất quan trọng của dịch vụ cần được sao lưu thường xuyên. Các loại dữ liệu cần sao lưu là thông tin cấu hình, cơ sở dữ liệu. Rsync là dịch vụ cần để thực hiện việc này.
